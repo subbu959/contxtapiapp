@@ -1,23 +1,17 @@
-"use client"
 import React from 'react'
-import { useContext } from 'react'
-import { useCart } from "../CartContext"
-
 
 type CardProps = {
-  id: number;
-  name: string;
-  price: number;
-  img: string;
-};
-const Card = ({ id, name, price, img }: CardProps) => {
-  const { addToCart } = useCart();
-
+    id: number;
+    name: string;
+    price: number;
+    img: string;
+    quantity:number;
+  };
+const CheckoutCard = ({ id, name, price, img, quantity }: CardProps) => {
   return (
     <div
       key={id}
       className="group relative"
-      onClick={() => addToCart(id, name, price, img)}
     >
       <img
         src={img}
@@ -34,7 +28,7 @@ const Card = ({ id, name, price, img }: CardProps) => {
         <p className="text-sm font-medium text-gray-900">${price}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default CheckoutCard
