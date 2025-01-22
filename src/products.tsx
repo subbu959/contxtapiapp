@@ -1,92 +1,103 @@
+import { 
+    FaTshirt, FaShoePrints, FaClock, FaHatCowboy, 
+     FaRunning, FaWallet, FaSuitcase ,
+} from 'react-icons/fa';
+import { RiShirtFill } from "react-icons/ri";
+import { 
+     BsBackpackFill ,BsSunglasses
+} from 'react-icons/bs';
+import { PiBaseballCapBold } from "react-icons/pi";
+import { GiBelt } from "react-icons/gi";
+
 export const products = [
     {
         id: 1,
         name: 'Classic Denim Jacket',
-        img: 'https://images.unsplash.com/photo-1601333144130-8cbb312386b6',
+        icon: <FaTshirt />, // Icon for clothing
         price: 89,
     },
     {
         id: 2,
         name: 'White Sneakers',
-        img: 'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a',
+        icon: <FaShoePrints />, // Icon for shoes
         price: 75,
     },
     {
         id: 3,
         name: 'Black Leather Backpack',
-        img: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62',
+        icon: <BsBackpackFill />, // Icon for backpack
         price: 95,
     },
     {
         id: 4,
         name: 'Premium Watch',
-        img: 'https://images.unsplash.com/photo-1524592094714-0f0654e20314',
+        icon: <FaClock />, // Icon for a watch
         price: 299,
     },
     {
         id: 5,
         name: 'Summer Hat',
-        img: 'https://images.unsplash.com/photo-1521369909029-2afed882baee',
+        icon: <FaHatCowboy />, // Icon for a cowboy hat
         price: 45,
     },
     {
         id: 6,
         name: 'Sunglasses',
-        img: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f',
+        icon: <BsSunglasses />, // Icon for sunglasses
         price: 89,
     },
     {
         id: 7,
         name: 'Running Shoes',
-        img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff',
+        icon: <FaRunning />, // Icon for running
         price: 120,
     },
     {
         id: 8,
         name: 'Leather Wallet',
-        img: 'https://images.unsplash.com/photo-1627123424574-724758594e93',
+        icon: <FaWallet />, // Icon for wallet
         price: 55,
     },
     {
         id: 9,
         name: 'Casual Shirt',
-        img: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c',
+        icon: <RiShirtFill />, // Icon for a casual shirt (HiOutlineShirt)
         price: 65,
     },
     {
         id: 10,
         name: 'Sports Cap',
-        img: 'https://images.unsplash.com/photo-1588850561407-ed78c282e89b',
+        icon: <PiBaseballCapBold />, // Icon for a sports cap (BsCap)
         price: 35,
     },
     {
         id: 11,
         name: 'Canvas Shoes',
-        img: 'https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77',
+        icon: <FaShoePrints />, // Reuse icon for shoes
         price: 69,
     },
     {
         id: 12,
         name: 'Hoodie',
-        img: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7',
+        icon: <FaTshirt />, // Closest match: T-shirt icon
         price: 79,
     },
     {
         id: 13,
         name: 'Belt',
-        img: 'https://images.unsplash.com/photo-1553981834-a23f5b69e3ec',
+        icon: <GiBelt />, // Icon for a belt
         price: 49,
     },
     {
         id: 14,
         name: 'Beanie',
-        img: 'https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9',
+        icon: <FaHatCowboy />, // Closest match: Cowboy hat
         price: 29,
     },
     {
         id: 15,
         name: 'Travel Bag',
-        img: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62',
+        icon: <FaSuitcase />, // Icon for a suitcase
         price: 159,
     },
-]
+];

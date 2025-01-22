@@ -13,11 +13,11 @@ const CheckoutCard = ({ id, name, price, img, quantity }: CardProps) => {
       key={id}
       className="group relative"
     >
-      <img
-        src={img}
-        alt={name}
-        className="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80"
-      />
+      <div
+        className="aspect-square w-full rounded-md bg-gray-900 flex items-center justify-center group-hover:opacity-75 lg:aspect-auto lg:h-80"
+      >
+        <div className="text-4xl">{img}</div> {/* Display the icon here */}
+      </div>
       <div className="mt-4 flex justify-between">
         <div>
           <h3 className="text-sm text-gray-700">

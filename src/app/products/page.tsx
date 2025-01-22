@@ -13,7 +13,7 @@ const page = () => {
               id={product.id}
               name={product.name}
               price={product.price}
-              img={product.img}
+              img={product.icon}
              
             />
           ))}
