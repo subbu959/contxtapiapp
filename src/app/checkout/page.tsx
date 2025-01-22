@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import { useCart } from '../../CartContext'
-import Card from '@/components/Card';
 import CheckoutCard from '@/components/CheckoutCard';
 
 
